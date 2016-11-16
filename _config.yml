@@ -27,11 +27,11 @@ rss:
 # Remove leading slashes ( "/archives" -> "archives" )
 menu:
   home: /
-  #categories: /categories
-  #about: /about
+  categories: /categories
+  about: /about
   archives: /archives
   tags: /tags
-  #commonweal: /404.html
+  commonweal: /404.html
 
 
 # Enable/Disable menu icons.
@@ -42,7 +42,7 @@ menu:
 menu_icons:
   enable: true
   # Icon Mapping.
-  home: home
+  home:
   about: user
   categories: th
   tags: tags
@@ -57,9 +57,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 
 
 
@@ -67,19 +67,24 @@ scheme: Muse
 # Sidebar Settings
 # ---------------------------------------------------------------
 
-
 # Social links
-# social:
-  #GitHub:
-  #Others:
+social:
+  github: https://github.com/saccohuo
+  twitter: https://twitter.com/SaccoHuo
+  weibo: http://weibo.com/u/2543793494
+  facebook: https://www.facebook.com/SaccoHuo
+  # douban: http://douban.com/people/your-user-name
+  # zhihu: http://www.zhihu.com/people/your-user-name
+  # 等等
 
 # Social Icons
 social_icons:
   enable: true
   # Icon Mappings
-  GitHub: github
-  Twitter: twitter
-  Weibo: weibo
+  github: github
+  twitter: twitter
+  weibo: weibo
+  facebook: facebook
 
 
 # Sidebar Avatar
@@ -138,14 +143,14 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night blue
 
 # Automatically scroll page to section which is under <!-- more --> mark.
 scroll_to_more: true
 
 # Automatically Excerpt
 auto_excerpt:
-  enable: false
+  enable: true
   length: 150
 
 # Use Lato font
@@ -158,7 +163,7 @@ use_font_lato: true
 # ---------------------------------------------------------------
 
 # MathJax Support
-mathjax:
+mathjax: true
 
 
 # Swiftype Search API Key
@@ -221,8 +226,22 @@ leancloud_visitors:
 # tencent_analytics:
 
 
-
-
+## Friends' Links
+# title
+links_title: 友情链接
+links:
+  Emacs-China: http://emacs-china.org/
+  Codefalling: https://codefalling.com/
+  Tumashu: http://tumashu.github.io/
+  子龙山人: http://zilongshanren.com/
+  GeekPlux: http://geekplux.com/
+  Dropbox: https://db.tt/y5BCZnVM
+  Linode: https://www.linode.com/?r=b2adfcb228f5096b66d791c16eea43bd6bd47797
+  Digital Ocean: https://m.do.co/c/ef7e1893b00b
+  Vultr: http://www.vultr.com/?ref=6867585
+  HostUS: https://my.hostus.us/aff.php?aff=1201
+  ShareLaTeX: https://www.sharelatex.com?r=5a1b71fd&rm=d&rs=b
+  Overleaf: https://www.overleaf.com/signup?ref=1a7b57fb45ce
 
 
 #! ---------------------------------------------------------------

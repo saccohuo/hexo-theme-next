@@ -20,7 +20,7 @@
         {% set posts_sticky = site.posts.find({sticky: { '$gt': 0 }}) %}
         {% set posts_sticky = posts_sticky.sort('-sticky') %}
         {% for post in posts_sticky %}
-          {{ post_template.render(post, true) }}
+          {{ post_template.render(post, true, false) }}
         {% endfor %}
       {% endif %}
 
