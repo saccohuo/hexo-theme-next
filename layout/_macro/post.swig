@@ -1,4 +1,4 @@
-{% macro render(post, is_index, is_pv, post_extra_class) %}
+{% macro render(post, is_index, post_extra_class) %}
 
   {% set headlessPost = Array.prototype.indexOf.call(['quote', 'picture'], post.type) > -1 %}
 
@@ -58,7 +58,7 @@
 
         <div class="post-meta">
           <span class="post-time">
-                      {% if theme.post_meta.created_at %}
+            {% if theme.post_meta.created_at %}
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
@@ -222,10 +222,10 @@
             </div>
           {% endif %}
 
-          {% if is_pv %}
-          <span>&nbsp; | &nbsp;
-          <span id="busuanzi_value_page_pv" ></span>次阅读
-          </span>
+          {% if post.description and (not theme.excerpt_description or not is_index) %}
+              <div class="post-description">
+                  {{ post.description }}
+              </div>
           {% endif %}
 
         </div>
@@ -313,7 +313,7 @@
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">
           {% for tag in post.tags %}
-            <a href="{{ url_for(tag.path) }}" rel="tag">#{{ tag.name }}</a>
+            <a href="{{ url_for(tag.path) }}" rel="tag"># {{ tag.name }}</a>
           {% endfor %}
         </div>
       {% endif %}
