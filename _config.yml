@@ -83,7 +83,6 @@ scheme: Pisces
 # - Be aware that setting too much fonts will cause site running slowly
 # - Introduce in 5.0.1
 # ---------------------------------------------------------------
-
 font:
   enable: true
 
@@ -282,6 +281,7 @@ mathjax:
   per_page: false
   cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
+
 # Swiftype Search API Key
 #swiftype_key:
 
@@ -403,6 +403,7 @@ busuanzi_count:
   page_pv: true
   page_pv_header: 本文总阅读量
   page_pv_footer: 次
+
 
 # Tencent analytics ID
 # tencent_analytics:

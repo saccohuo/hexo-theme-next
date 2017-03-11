@@ -19,5 +19,4 @@
     NexT.{{ theme.scheme }}
   </a>
 </div>
-{% block footer %}{% endblock %}
 {% endif %}
